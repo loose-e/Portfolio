@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Connecting HTML and CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <title>My Stuff</title>
+    <style>
+        h1,h2,h3,h4,h5,h6 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header"><h1>Poulson Portfolio</h1></div>
+        <section class="nav_container">
+            <a class="nav_button" href="./index.html">Home</a>
+            <a class="nav_button" href="./about_me.html">About Me</a>
+            <a class="nav_button" href="./workshop.html">My Stuff</a>
+            <a class="nav_button" href="./projects.html">Completed Projects</a>
+            <a class="nav_button" href="./contact.html">Contact Info</a>
+        </section>
+        <br>
+    </header>
+    <main>
+        <div class="main_flex_cont">
+            <p>I'm still learning of a way to display files and such. But it's in the works.</p>
+            <p>This is my solution to the first problem on projecteuler.net, found here:</p>
+            <a href="https://projecteuler.net/problem=1">https://projecteuler.net/problem=1</a>
+            <p style="white-space: pre-wrap;">let aNum = [];
+
+for (i = 1; i < 1000; i++ ) {
+    aNum.push(false);
+}
+
+for (i = 3; i < 1000; i+=3) {
+    aNum[i] = true;
+}
+
+for (i = 5; i < 1000; i+=5) {
+    aNum[i] = true;
+}
+
+let totalSum = 0;
+for (number in aNum) {
+    if (aNum[number]) {
+        totalSum += Number(number);
+    }
+}
+
+console.log(totalSum);</p>
+            <br>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="#top" class="top_button">Return to top</a>
+        </div>
+    </footer>
+    <br>
+</body>
+</html>

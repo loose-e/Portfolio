@@ -1,44 +1,80 @@
 body {
     background: url("./images/repeating_background.png");
     background-repeat: repeat;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    min-width: 300px;
 }
 
 header {
+    background-color: blueviolet;
+
+    border-style: solid;
+    border-color: #3E2464;
+    border-radius: 50px;
+    border-width: 3px;
+
+    width: 60%;
     font-size: 25px;
     text-align: center;
     color: plum;
     text-shadow: 20px 20px 40px #3E2464, 20px -20px 40px #3E2464, -20px 20px 40px #3E2464, -20px -20px 40px #3E2464;
+    opacity: 0.8;
 }
 
 main {
     display: grid;
-    grid-template: 1fr / 1fr 12fr 1fr;
+    grid-template: 1fr / 1fr 80fr 1fr;
     justify-self: center;
     align-self: center;
 
-    height: -webkit-fill-available;
-    width: 100%;
-    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    font-size: 24px;
+
+    width: 65%;
+    min-width: 350px;
+
+    border-radius: 25px;
+    border-style: solid; 
+    border-width: 2px;
+
+    background-color:blueviolet;
+    /* padding: 10px 10px 10px 10px;  */
+    opacity: 0.8;
+}
+
+main img {
+    height: 400px;
+    width: 400px;
+
+    border-width: 3px;
+}
+
+footer {
+    justify-self: center;
+    text-align: center;
+    opacity: 0.8;
 }
 
 .nav_container {
     display: flex;
-    gap: 1px;
     flex-wrap: wrap;
+    gap: 1px;
     justify-content: center;
-
-    width: auto;
-
-    border-style: solid;
-    border-color:black;
-    border-spacing: 10px;
-    border-radius: 25px;
-
 }
 
 .nav_button {
     background-color: plum;
     color: white;
+
+    width: max-content;
 
     text-align: center;
     font-size:22px;
@@ -50,14 +86,23 @@ main {
     grid-column: 2 / 3;
     display: flex;
     flex-direction: column;
+
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-main > div {
-    border-radius: 25px;
-    border-style: solid; 
-    border-width: 2px;
+.top_button {
+    color: #3E2464;
+    border-color: black;
+    border-radius: 10px;
+    background-color:plum;
+    font-size: 16px;
 
-    background-color:blueviolet;
-    padding: 10px 10px 10px 10px; 
-    opacity: 0.8;
+    width: auto;
+    padding: 10px;
+}
+
+#header {
+    margin: 20px;
 }
