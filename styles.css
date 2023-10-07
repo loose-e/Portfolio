@@ -1,5 +1,6 @@
 body {
     background: url("./images/repeating_background.png");
+    background-color: #60e352;
     background-repeat: repeat;
 
 
@@ -12,17 +13,17 @@ body {
 }
 
 header {
-    background-color: blueviolet;
+    background-color: #8d52e3;
 
     border-style: solid;
-    border-color: #3E2464;
+    border-color: black;
     border-radius: 50px;
-    border-width: 3px;
+    border-width: 2px;
 
     width: 60%;
+    min-width: 320px;
     font-size: 25px;
     text-align: center;
-    color: plum;
     text-shadow: 20px 20px 40px #3E2464, 20px -20px 40px #3E2464, -20px 20px 40px #3E2464, -20px -20px 40px #3E2464;
     opacity: 0.8;
 }
@@ -39,20 +40,20 @@ main {
     font-size: 24px;
 
     width: 65%;
-    min-width: 350px;
+    min-width: 360px;
 
     border-radius: 25px;
     border-style: solid; 
     border-width: 2px;
 
-    background-color:blueviolet;
+    background-color:#8d52e3;
     /* padding: 10px 10px 10px 10px;  */
-    opacity: 0.8;
+    opacity: 0.95;
 }
 
 main img {
-    height: 400px;
-    width: 400px;
+    height: auto;
+    width: auto;
 
     border-width: 3px;
 }
@@ -71,8 +72,8 @@ footer {
 }
 
 .nav_button {
-    background-color: plum;
-    color: white;
+    background-color: #d552e3;
+    color: #a8e352;
 
     width: max-content;
 
@@ -90,13 +91,15 @@ footer {
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+
+    overflow: auto;
 }
 
 .top_button {
     color: #3E2464;
     border-color: black;
     border-radius: 10px;
-    background-color:plum;
+    background-color:#d552e3;
     font-size: 16px;
 
     width: auto;
@@ -104,5 +107,10 @@ footer {
 }
 
 #header {
+    color: #d552e3;
     margin: 20px;
+}
+
+#code {
+    white-space: pre-wrap;
 }

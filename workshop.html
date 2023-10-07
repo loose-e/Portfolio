@@ -19,34 +19,25 @@
         <section class="nav_container">
             <a class="nav_button" href="./index.html">Home</a>
             <a class="nav_button" href="./about_me.html">About Me</a>
-            <a class="nav_button" href="./workshop.html">My Stuff</a>
             <a class="nav_button" href="./projects.html">Completed Projects</a>
+            <a class="nav_button" href="./workshop.html">My Stuff</a>
             <a class="nav_button" href="./contact.html">Contact Info</a>
         </section>
         <br>
     </header>
     <main>
         <div class="main_flex_cont">
-            <p>I'm still learning of a way to display files and such. But it's in the works.</p>
+            <p>I'm still learning of different ways to display files and such. But it's in the works.</p>
             <p>This is my solution to the first problem on projecteuler.net, found here:</p>
             <a href="https://projecteuler.net/problem=1">https://projecteuler.net/problem=1</a>
-            <p style="white-space: pre-wrap;">let aNum = [];
-
-for (i = 1; i < 1000; i++ ) {
-    aNum.push(false);
-}
-
-for (i = 3; i < 1000; i+=3) {
-    aNum[i] = true;
-}
-
-for (i = 5; i < 1000; i+=5) {
-    aNum[i] = true;
-}
+            <p id="code">let numArray = [];
+for (i = 1; i < 1000; i++) {numArray.push(false);}
+for (i = 3; i < 1000; i+=3) {numArray[i] = true;}
+for (i = 5; i < 1000; i+=5) {numArray[i] = true;}
 
 let totalSum = 0;
-for (number in aNum) {
-    if (aNum[number]) {
+for (number in numArray) {
+    if (numArray[number]) {
         totalSum += Number(number);
     }
 }
